@@ -1,0 +1,12 @@
+type P = { size?: number };
+const base = (size = 22) => ({ width: size, height: size, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true });
+export const Heart = ({ size }: P) => <svg {...base(size)}><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z" /></svg>;
+export const Check = ({ size }: P) => <svg {...base(size)} strokeWidth={3}><path d="M20 6 9 17l-5-5" /></svg>;
+export const Pencil = ({ size }: P) => <svg {...base(size)}><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" /></svg>;
+export const X = ({ size }: P) => <svg {...base(size)}><path d="M18 6 6 18M6 6l12 12" /></svg>;
+export const Today = ({ size }: P) => <svg {...base(size)}><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" /></svg>;
+export const Plus = ({ size }: P) => <svg {...base(size)}><circle cx="12" cy="12" r="10" /><path d="M12 8v8M8 12h8" /></svg>;
+export const Calendar = ({ size }: P) => <svg {...base(size)}><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>;
+export const Pulse = ({ size }: P) => <svg {...base(size)}><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>;
+export const Thermo = ({ size }: P) => <svg {...base(size)}><path d="M14 14.8V4.5a2.5 2.5 0 0 0-5 0v10.3a4.5 4.5 0 1 0 5 0z" /></svg>;
+export const FileIcon = ({ size }: P) => <svg {...base(size)}><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6" /></svg>;
